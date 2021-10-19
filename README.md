@@ -15,11 +15,11 @@ Generate CRUD APIs with this powerful and simple CLI program. Currently this pro
 
 #### Explanation of the different files :
 
-**app** :  This file allows you to configure the global Flask object
+`app` :  This file allows you to configure the global Flask object
 
-**routes** : This file contains all the API logic (routes, etc...)
+`routes` : This file contains all the API logic (routes, etc...)
 
-**run** : This file allows you to run the API
+`run` : This file allows you to run the API
 
 ### How to generate an CRUD API ?
 Generating an API with this program is really easy. Let's see how to do it !
