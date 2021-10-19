@@ -2,9 +2,8 @@
 
 Feel free to check the **[CHANGELOG](CHANGELOG.md)**
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/mazzya/CRUD-API-Generator)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/mazzya/crud-api-generator)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?)
-![GitHub](https://img.shields.io/github/license/mazzya/crud-api-generator)
 
 Generate CRUD APIs with this powerful and simple CLI program. Currently this program allows you to generate APIs with the Flask microframework. This program uses a specific file organization for API generation: 
 
@@ -33,7 +32,7 @@ It is assumed that you already have Flask installed on your system.
 ```bash
 $ git clone https://github.com/Mazzya/CRUD-API-Generator-DEV.git
 ```
-If you wish, you can download the project directly [here]()
+If you wish, you can download the project directly [here](https://github.com/Mazzya/CRUD-API-Generator/releases/download/v1.0.0/CAG.zip)
 #### Optional arguments
 ```
 -h, --help            show this help message and exit
