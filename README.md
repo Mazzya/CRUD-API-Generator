@@ -1,6 +1,6 @@
 # CRUD-API-Generator
 
-Check **[CHANGELOG](CHANGELOG.md)**
+Feel free to check the **[CHANGELOG](CHANGELOG.md)**
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mazzya/CRUD-API-Generator)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?)
