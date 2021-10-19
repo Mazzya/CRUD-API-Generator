@@ -5,7 +5,7 @@ Check **[CHANGELOG](CHANGELOG.md)**
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mazzya/CRUD-API-Generator)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?)
 
-Generate CRUD APIs with this powerful and simple CLI. Currently this program allows you to generate APIs with the Flask microframework. This program uses a specific file organization for API generation: 
+Generate CRUD APIs with this powerful and simple CLI program. Currently this program allows you to generate APIs with the Flask microframework. This program uses a specific file organization for API generation: 
 
     API Generator/
             └── app/
