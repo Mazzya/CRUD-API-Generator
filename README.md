@@ -2,6 +2,8 @@
 
 Feel free to check the **[CHANGELOG](CHANGELOG.md)**
 
+🎥 To see CAG in action, click [here](https://www.youtube.com/watch?v=59EZ7HwrOJc)
+
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mazzya/crud-api-generator)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?)
 
@@ -23,6 +25,7 @@ Generate CRUD APIs with this powerful and simple CLI program. Currently this pro
 
 ### How to generate an CRUD API ?
 Generating an API with this program is really easy. Let's see how to do it !
+
 #### Requirements
 ```
 Python 3
