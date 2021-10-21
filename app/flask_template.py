@@ -1,13 +1,11 @@
-class FlaskTemplate:
-    
-    imports = 'from flask import Flask, jsonify\nfrom app import app'
-    
+class FlaskTemplate:    
     app = 'from flask import Flask\n\napp = Flask(__name__)'
     
     run = """import app\n\nif __name__ == '__main__': 
     app.run()"""
     
-    routes = """# Home page
+    routes = """
+    from flask import Flask, jsonify\nfrom app import app\n\n# Home page
 @app.route('/')
 def home():
     return jsonify({
