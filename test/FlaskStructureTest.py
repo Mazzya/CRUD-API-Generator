@@ -5,8 +5,7 @@ sys.path.append(os.path.abspath(os.path.join('..', 'app')))
 
 from flask_structure import *
 
-
-flaskTemplate = FlaskStructure()
-
-flaskTemplate.generate()
+if __name__ == '__main__':
+    flaskTemplate = FlaskStructure()
+    flaskTemplate.generate()
 

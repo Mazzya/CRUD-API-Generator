@@ -2,6 +2,7 @@ from io import open
 import argparse
 import os
 from flask_structure import *
+
 VERSION = '1.0.0'
 
 
