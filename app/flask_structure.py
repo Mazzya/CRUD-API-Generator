@@ -67,7 +67,7 @@ class FlaskStructure:
                 with open(f'{route}', 'w') as file:
                     file.write(f'{self.content[key]}')
             except:
-                print("Please try again.")
+                print("Oops, there was a problem with the file generation. Please try again.")
     
 
 
