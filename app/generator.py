@@ -1,10 +1,13 @@
+# This program has been developed by Mazzya
+# Github: https://github.com/mazzya
+# Github Project: https://github.com/Mazzya/CRUD-API-Generator
+
 from io import open
 import argparse
 import os
 from flask_structure import *
 
-VERSION = '1.0.0'
-
+VERSION = '1.0.1'
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate CRUD APIs quickly and easily.')
@@ -22,5 +25,5 @@ if __name__ == '__main__':
     elif args.version:
         print(f'Current version: {VERSION}')
     else:
-        print("Please try again")
+        print("You need to enter at least one argument, please try again.")
         parser.print_help()
