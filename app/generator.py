@@ -2,7 +2,6 @@
 # Github: https://github.com/mazzya
 # Github Project: https://github.com/Mazzya/CRUD-API-Generator
 
-from io import open
 import argparse
 from flask_structure import *
 
