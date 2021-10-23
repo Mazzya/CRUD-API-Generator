@@ -1,6 +1,9 @@
 #!/usr/bin/python
+# This program has been developed by Mazzya
+# Github: https://github.com/mazzya
+# Github Project: https://github.com/Mazzya/CRUD-API-Generator
+
 import os
-#from flask_template import FlaskTemplate
 
 class FlaskTemplate:    
     app = 'from flask import Flask\n\napp = Flask(__name__)'
@@ -66,8 +69,9 @@ class FlaskStructure:
             try:
                 with open(f'{route}', 'w') as file:
                     file.write(f'{self.content[key]}')
-            except:
-                print("Oops, there was a problem with the file generation. Please try again.")
+            except FileNotFoundError:
+                print("Oops, there was a problem with the file generation. Please check if the directory exists and try again.")
+                break
     
 
 

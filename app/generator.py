@@ -4,7 +4,6 @@
 
 from io import open
 import argparse
-import os
 from flask_structure import *
 
 VERSION = '1.0.1'
@@ -17,11 +16,11 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.flask and args.path:
-        flaskTemplate = FlaskStructure()
-        flaskTemplate.generate(args.path)
+        flask_api = FlaskStructure()
+        flask_api.generate(args.path)
     elif args.flask:
-        flaskTemplate = FlaskStructure()
-        flaskTemplate.generate()
+        flask_api = FlaskStructure()
+        flask_api.generate()
     elif args.version:
         print(f'Current version: {VERSION}')
     else:
