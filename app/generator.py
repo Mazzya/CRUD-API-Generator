@@ -1,42 +1,11 @@
-from io import open
+# This program has been developed by Mazzya
+# Github: https://github.com/mazzya
+# Github Project: https://github.com/Mazzya/CRUD-API-Generator
+
 import argparse
-import os
-from flask_template import FlaskTemplate
+from flask_structure import *
 
-VERSION = '1.0.0'
-
-def generate_flask_api(path=None):
-    
-    flask_api = FlaskTemplate()
-    
-    if path:
-        if os.path.exists(path):
-            
-            print("Generating the API...")
-            
-            with open(f'{path}/routes.py', 'w') as file:
-                file.write(f'{flask_api.imports}\n\n{flask_api.routes}')
-
-            with open(f'{path}/app.py', 'w') as file:
-                file.write(f'{flask_api.app}')
-
-            with open(f'{path}/run.py', 'w') as file:
-                file.write(f'{flask_api.run}')
-        else:
-            print("Oops, there was a problem with your directory. Check if it exists and try again.")
-    else:
-        
-        print("Generating the API in the default directory...")
-        
-        with open('routes.py', 'w') as file:
-            file.write(f'{flask_api.imports}\n\n{flask_api.routes}')
-
-        with open('app.py', 'w') as file:
-            file.write(f'{flask_api.app}')
-
-        with open('run.py', 'w') as file:
-            file.write(f'{flask_api.run}')
-
+VERSION = '1.0.1'
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate CRUD APIs quickly and easily.')
@@ -46,11 +15,13 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.flask and args.path:
-        generate_flask_api(args.path)
+        flask_api = FlaskStructure()
+        flask_api.generate(args.path)
     elif args.flask:
-        generate_flask_api()
+        flask_api = FlaskStructure()
+        flask_api.generate()
     elif args.version:
         print(f'Current version: {VERSION}')
     else:
-        print("Please try again")
+        print("You need to enter at least one argument, please try again.")
         parser.print_help()
