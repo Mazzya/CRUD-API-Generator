@@ -5,12 +5,13 @@
 
 import os
 
-class FlaskTemplate:    
+
+class FlaskTemplate:
     app = 'from flask import Flask\n\napp = Flask(__name__)'
-    
+
     run = """import app\n\nif __name__ == '__main__': 
     app.run()"""
-    
+
     routes = """from flask import Flask, jsonify\nfrom app import app\n\n# Home page
 @app.route('/')
 def home():
@@ -52,30 +53,23 @@ class FlaskStructure:
     def __init__(self):
         self.flask_api = FlaskTemplate()
         self.content = {
-            'run':self.flask_api.run,
-            'app':self.flask_api.app,
-            'routes':self.flask_api.routes
+            'run': self.flask_api.run,
+            'app': self.flask_api.app,
+            'routes': self.flask_api.routes
         }
-        
-    def generate(self,path = None):
+
+    def generate(self, path=None):
 
         if not path or not os.path.exists(path):
             print("Generating the API in the default directory...")
         else:
             print(f"Generating the API in a specific directory: {path}")
-        
+
         for key in self.content:
-            route  = "{pathName}/{fileName}.py".format(pathName=path,fileName=key) if path else "{fileName}.py".format(fileName=key)
+            route = "{pathName}/{fileName}.py".format(pathName=path, fileName=key) if path else "{fileName}.py".format(fileName=key)
             try:
                 with open(f'{route}', 'w') as file:
                     file.write(f'{self.content[key]}')
             except FileNotFoundError:
                 print("Oops, there was a problem with the file generation. Please check if the directory exists and try again.")
                 break
-    
-
-
-
-
-
-    
