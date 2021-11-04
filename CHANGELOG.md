@@ -6,6 +6,6 @@
 **Changed:**
 * The license has been modified, now CAG has the license : GNU General Public License v3.0
 * The program source code has been better reorganized.
-* The name of the file that allowed working with Flask has been changed : flask_template ➟ flask_structure
+* The name of the file that allowed working with Flask has been changed : flask_template.py ➟ flask_structure.py
 ## v1.0.0 - Oct 19, 2021
 Initial release.
