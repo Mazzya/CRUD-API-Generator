@@ -7,9 +7,13 @@ Feel free to check the **[CHANGELOG](CHANGELOG.md)**
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mazzya/crud-api-generator)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?)
 
-Generate CRUD APIs with this powerful and simple CLI program. Currently this program allows you to generate APIs with the Flask microframework. This program uses a specific file organization for API generation: 
+Generate CRUD APIs with this powerful and simple CLI program. Currently, this program allows to generate APIs with the following microframeworks :
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+* [FastAPI](https://fastapi.tiangolo.com/) 
 
-    API Generator/
+This program uses a specific file organization for API generation when using Flask : 
+
+    MyAPI/
             └── app/
                 ├── routes.py
                 ├── app.py
@@ -40,6 +44,7 @@ If you wish, you can download the project directly [here](https://github.com/Maz
 ```
 -h, --help            show this help message and exit
 --flask               Generate a CRUD API with Flask
+--fastapi             Generate a CRUD API with FastAPI
 -v, --version         Check current version
 -p PATH, --path PATH  Path where the API will be generated
 ```
@@ -59,4 +64,4 @@ If you find a problem with the program, feel free to [report it.](https://github
 #### Contribute
 Any contribution is welcome ! If you wish, do not hesitate to fork the project and apply your changes there, when the changes are published create a pull request so that we can review it.
 #### Important note
-Currently, this program only generates APIs with [Flask](https://github.com/pallets/flask) but we are working to add support for [FastAPI](https://github.com/tiangolo/fastapi) In a future release.
+Currently, this program only generates APIs with [Flask](https://github.com/pallets/flask) and [FastAPI](https://github.com/tiangolo/fastapi). It is possible that more frameworks will be added in the next versions.
