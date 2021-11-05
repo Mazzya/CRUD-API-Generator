@@ -12,7 +12,7 @@ class FastApiTemplate:
     description='A simple API generated with CAG (CRUD-API-Generator)',
     version='0.0.1')"""
 
-    routes = """from app import app\n\n # Home page
+    routes = """from app import app\n\n\n# Home page
 @app.get('/')
 async def home():
     return {
@@ -23,25 +23,30 @@ async def home():
         'CAG in action': 'https://bit.ly/3G4knFo'
     }
 
+
 # Add new product
 @app.post('/products')
 async def add_product():
     pass
+
 
 # Get all products
 @app.get('/products')
 async def get_products():
     pass
 
+
 # Get product per ID
 @app.get('/products/{product_id}')
 async def get_product(product_id: str):
     pass
 
+
 # Update product
 @app.put('/products/{product_id}')
 async def update_product(product_id: str):
     pass
+
 
 # Delete product
 @app.delete('/products/{product_id}')
