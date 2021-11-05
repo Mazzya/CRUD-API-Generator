@@ -12,7 +12,7 @@ class FlaskTemplate:
     run = """import app\n\nif __name__ == '__main__': 
     app.run()"""
 
-    routes = """from flask import Flask, jsonify\nfrom app import app\n\n# Home page
+    routes = """from flask import Flask, jsonify\nfrom app import app\n\n\n# Home page
 @app.route('/')
 def home():
     return jsonify({
@@ -22,34 +22,40 @@ def home():
         'Github Project': 'https://github.com/Mazzya/crud-api-generator'
     })
 
+
 # Add new product
 @app.route('/products', methods = ['POST'])
 def add_product():
     pass
+
 
 # Get all products
 @app.route('/products')
 def get_products():
     pass
 
+
 # Get product per ID
 @app.route('/products/<int:id>')
 def get_product(id: str):
     pass
+
 
 # Update product
 @app.route('/products/<int:id>', methods=['PUT'])
 def edit_product(id):
     pass
 
+
 # Delete product
 @app.route('/products/<int:id>', methods = ['DELETE'])
 def delete_product(id):
     pass
 
-# This function handles 404 error
+
+# This function handles the 404 error
 @app.errorhandler(404)
-def page_not_found(error):
+def page_not_found():
     return jsonify({'message': 'page not found !'})"""
 
 
@@ -76,5 +82,6 @@ class FlaskStructure:
                 with open(f'{route}', 'w') as file:
                     file.write(f'{self.content[key]}')
             except FileNotFoundError:
-                print("Oops, there was a problem with the file generation. Please check if the directory exists and try again.")
+                print("Oops, there was a problem with the file generation. Please check if the directory exists and "
+                      "try again.")
                 break

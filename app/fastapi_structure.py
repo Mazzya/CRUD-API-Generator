@@ -71,5 +71,6 @@ class FastApiStructure:
                 with open(f'{route}', 'w') as file:
                     file.write(f'{self.content[key]}')
             except FileNotFoundError:
-                print("Oops, there was a problem with the file generation. Please check if the directory exists and try again.")
+                print("Oops, there was a problem with the file generation. Please check if the directory exists and "
+                      "try again.")
                 break
