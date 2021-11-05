@@ -9,6 +9,7 @@ from fastapi_structure import FastApiStructure
 VERSION = '1.1.0'
 
 if __name__ == '__main__':
+
     parser = argparse.ArgumentParser(description='Generate CRUD APIs quickly and easily.')
     parser.add_argument('--flask', action='store_true', help='Generate a CRUD API with Flask')
     parser.add_argument('--fastapi', action='store_true', help='Generate a CRUD API with FastAPI')
