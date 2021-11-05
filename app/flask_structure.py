@@ -24,22 +24,27 @@ def home():
 
 # Add new product
 @app.route('/products', methods = ['POST'])
-def addProduct():
+def add_product():
     pass
 
 # Get all products
 @app.route('/products')
-def getProducts():
+def get_products():
+    pass
+
+# Get product per ID
+@app.route('/products/<int:id>')
+def get_product(id: str):
     pass
 
 # Update product
 @app.route('/products/<int:id>', methods=['PUT'])
-def editProduct(id):
+def edit_product(id):
     pass
 
 # Delete product
 @app.route('/products/<int:id>', methods = ['DELETE'])
-def deleteProduct(id):
+def delete_product(id):
     pass
 
 # This function handles 404 error
