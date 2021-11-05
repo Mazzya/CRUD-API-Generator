@@ -19,7 +19,7 @@ This program uses a specific file organization for API generation when using Fla
                 ├── app.py
                 └── run.py
 
-#### Explanation of the different files :
+#### Explanation of the different files for API generation with Flask :
 
 `app` :  This file allows you to configure the global Flask object
 
@@ -49,7 +49,9 @@ If you wish, you can download the project directly [here](https://github.com/Maz
 -p PATH, --path PATH  Path where the API will be generated
 ```
 In order to generate an API with Flask, it is necessary to use the `--flask` argument. If you want to generate the API in a specific directory, it is necessary to use the `-p` or `--path` argument with your directory.
-#### Examples
+### Examples
+Let's see how to generate an API with Flask and FastAPI.
+#### Generate an API with Flask
 If you wish to generate an API without specifying the directory :
 ```bash
 $ generator.py --flask
@@ -57,6 +59,15 @@ $ generator.py --flask
 If you want to generate an API in a specific directory :
 ```bash
 $ generator.py --flask -p "C:\Users\HP\Documents"
+```
+#### Generate an API with FastAPI
+If you wish to generate an API without specifying the directory :
+```bash
+$ generator.py --fastapi
+```
+If you want to generate an API in a specific directory :
+```bash
+$ generator.py --fastapi -p "C:\Users\HP\Documents"
 ```
 The functions are already available, the only thing left for you to do is to implement the logic and eventually add a database if you need to.
 #### Issues
