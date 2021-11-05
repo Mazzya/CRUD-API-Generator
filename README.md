@@ -55,7 +55,7 @@ $ generator.py --flask -p "C:\Users\HP\Documents"
 ```
 The functions are already available, the only thing left for you to do is to implement the logic and eventually add a database if you need to.
 #### Issues
-If you find a problem with the program, feel free to [report it.](https://github.com/Mazzya/CRUD-API-Generator-DEV/issues)
+If you find a problem with the program, feel free to [report it.](https://github.com/Mazzya/CRUD-API-Generator/issues)
 #### Contribute
 Any contribution is welcome ! If you wish, do not hesitate to fork the project and apply your changes there, when the changes are published create a pull request so that we can review it.
 #### Important note
