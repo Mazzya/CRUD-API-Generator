@@ -34,7 +34,7 @@ Generating an API with this program is really easy. Let's see how to do it !
 ```
 Python 3
 ```
-It is assumed that you already have Flask installed on your system.
+It is assumed that you have already installed the framework for which you are going to generate the API.
 #### Clone the repository
 ```bash
 $ git clone https://github.com/Mazzya/CRUD-API-Generator-DEV.git
@@ -48,7 +48,6 @@ If you wish, you can download the project directly [here](https://github.com/Maz
 -v, --version         Check current version
 -p PATH, --path PATH  Path where the API will be generated
 ```
-In order to generate an API with Flask, it is necessary to use the `--flask` argument. If you want to generate the API in a specific directory, it is necessary to use the `-p` or `--path` argument with your directory.
 ### Examples
 Let's see how to generate an API with Flask and FastAPI.
 #### Generate an API with Flask
