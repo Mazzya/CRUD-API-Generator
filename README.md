@@ -39,7 +39,7 @@ It is assumed that you have already installed the framework for which you are go
 ```bash
 $ git clone https://github.com/Mazzya/CRUD-API-Generator-DEV.git
 ```
-If you wish, you can download the project directly [here](https://github.com/Mazzya/CRUD-API-Generator/releases/download/v1.0.0/CAG.zip)
+If you wish, you can download the project directly [here](https://github.com/Mazzya/CRUD-API-Generator/releases)
 #### Optional arguments
 ```
 -h, --help            show this help message and exit
