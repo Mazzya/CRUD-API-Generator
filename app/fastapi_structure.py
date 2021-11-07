@@ -19,8 +19,7 @@ async def home():
         'message': 'Welcome to this simple API generated with CAG and FastAPI',
         'author': 'Mazzya',
         'Github': 'https://www.github.com/Mazzya',
-        'Github Project': 'https://github.com/Mazzya/crud-api-generator',
-        'CAG in action': 'https://bit.ly/3G4knFo'
+        'Github Project': 'https://github.com/Mazzya/crud-api-generator'
     }
 
 
