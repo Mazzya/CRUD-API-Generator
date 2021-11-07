@@ -1,4 +1,4 @@
-## v1.1.0 - XX, 2021
+## v1.1.0 - Nov 7, 2021
 **Added:**
 
 * **FastAPI support :** This is the most important feature of this new update, it is now possible to generate APIs with FastAPI. Feel free to visit the documentation to see how to do it.
