@@ -2,7 +2,7 @@
 **Added:**
 
 * **FastAPI support :** This is the most important feature of this new update, it is now possible to generate APIs with FastAPI. Feel free to visit the documentation to see how to do it.
-* A new function called `get_product()` has been added to the Flask API template. This function allows to get a product by its ID.
+* A new function called `get_product()` has been added to the Flask API template. This function allows to get a product by its ID. Previously, only the totality of the products could be obtained but now, thanks to this new feature, it is possible to specify the product by its ID.
 
 **Changed:**
 * The structure of the Flask API template has been improved.

@@ -75,3 +75,5 @@ If you find a problem with the program, feel free to [report it.](https://github
 Any contribution is welcome ! If you wish, do not hesitate to fork the project and apply your changes there, when the changes are published create a pull request so that we can review it.
 #### Important note
 Currently, this program only generates APIs with [Flask](https://github.com/pallets/flask) and [FastAPI](https://github.com/tiangolo/fastapi). It is possible that more frameworks will be added in the next versions.
+#### Discord Server
+We have a discord server in case you have any questions or want to be informed about the project news. Do not hesitate to [join us](https://discord.gg/mZF9ywQzdg), we are waiting for you.
